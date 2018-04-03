@@ -1,0 +1,28 @@
+{
+  "name": "vscode-elasticsearch-snippets",
+  "publisher": "deerawan",
+  "version": "1.0.0",
+  "displayName": "Elasticsearch snippets",
+  "description": "Elasticsearch snippets for Javascript and Typescript",
+  "license": "See License in LICENSE.md",
+  "icon": "",
+  "galleryBanner": {
+    "color": "#ba6907",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deerawan/vscode-elasticsearch-snippets"
+  },
+  "engines": {
+    "vscode": "0.10.x"
+  },
+  "categories": ["Snippets"],
+  "contributes": {
+    "snippets": [
+      {        
+        "path": "./snippets/global.code-snippets"
+      }
+    ]
+  }
+}
