@@ -82,5 +82,41 @@
     "description": "Elasticsearch query ids",
     "body": "{ ids: { type: '${1:mappingType}', values: ['$2', '$3'] }}",
     "scope": "javascript,typescript"
-  },  
+  }, 
+  "Elasticsearch Aggregations Avg": {
+    "prefix": "es-agg-avg",
+    "description": "Elasticsearch aggregations average",
+    "body": "{ avg: { field: '${1:fieldName}' }}",
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggregations Avg Inline Script": {
+    "prefix": "es-agg-avg-script",
+    "description": "Elasticsearch aggregations average inline script",
+    "body": "{ avg: { script: { inline: '${1:script}', params: { ${2:paramName}: '${3:value}' }, lang: 'painless' }}}",
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggregations Avg File Script": {
+    "prefix": "es-agg-avg-script-file",
+    "description": "Elasticsearch aggregations average inline script",
+    "body": "{ avg: { script: { file: '${1:scriptFileName}', params: { ${2:paramName}: '${3:value}' }}}}",
+    "scope": "javascript,typescript"
+  }, 
+  "Elasticsearch Aggregations Cardinality": {
+    "prefix": "es-agg-cardinality",
+    "description": "Elasticsearch aggregations cardinality",
+    "body": "{ cardinality: { field: '${1:fieldName}' }}",
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggregations Cardinality Inline Script": {
+    "prefix": "es-agg-cardinality-script",
+    "description": "Elasticsearch aggregations cardinality inline script",
+    "body": "{ cardinality: { script: { inline: '${1:script}', params: { ${2:paramName}: '${3:value}' }, lang: 'painless' }}}",
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggregations Cardinality File Script": {
+    "prefix": "es-agg-cardinality-script-file",
+    "description": "Elasticsearch aggregations cardinality inline script",
+    "body": "{ cardinality: { script: { file: '${1:scriptFileName}', params: { ${2:paramName}: '${3:value}' } }}}",
+    "scope": "javascript,typescript"
+  }, 
 }
