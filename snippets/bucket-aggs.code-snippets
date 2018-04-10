@@ -2,7 +2,7 @@
   "Elasticsearch Aggs Children": {
     "prefix": "es-agg-children",
     "description": "Elasticsearch aggregations children",
-    "body": "{ children: { type: '${1:fieldName}' }",
+    "body": "{ children: { type: '${1:fieldName}' }}",
     "scope": "javascript,typescript"
   },
   "Elasticsearch Aggs Date Histogram": {
@@ -13,7 +13,7 @@
       "\tdate_histogram: {",
       "\t\tfield: '${1:fieldName}',",
       "\t\tinterval: '${2:month}',",
-      "\t\tformat: '${3:yyyy-MM-dd}'",
+      "\t\tformat: '${3:yyyy-MM-dd}',",
       "\t}",
       "}"
     ],
@@ -29,8 +29,8 @@
       "\t\tformat: '${2:yyyy-MM-dd}',",
       "\t\tranges: [",
       "\t\t\t{ from: '${3:now-10M/M}' },",
-      "\t\t\t{ to: '${4:now-10M/M}' }",
-      "\t\t]",
+      "\t\t\t{ to: '${4:now-10M/M}' },",
+      "\t\t],",
       "\t}",
       "}",  
     ],
@@ -39,7 +39,7 @@
   "Elasticsearch Aggs Diversified Sampler": {
     "prefix": "es-agg-diversified-sampler",
     "description": "Elasticsearch aggregations diversified sampler",
-    "body": "{ diversified_sampler: { type: '${1:fieldName}', shard_size: ${2:200} }",
+    "body": "{ diversified_sampler: { type: '${1:fieldName}', shard_size: ${2:200} }}",
     "scope": "javascript,typescript"
   },
   "Elasticsearch Aggs Geo Distance": {
@@ -52,8 +52,8 @@
       "\t\torigin: '${2:52.3760, 4.894}',",
       "\t\tranges: [",
         "\t\t\t{ from: ${3:100} },",
-        "\t\t\t{ to: ${4:200} }",
-        "\t\t]",
+        "\t\t\t{ to: ${4:200} },",
+        "\t\t],",
       "\t}",
       "}"
     ],
@@ -62,13 +62,47 @@
   "Elasticsearch Aggs Geohash Grid": {
     "prefix": "es-agg-geohash-grid",
     "description": "Elasticsearch aggregations geohash grid",
-    "body": "{ geohash_grid: { field: '${1:fieldName}', precision: ${2:3} }",
+    "body": "{ geohash_grid: { field: '${1:fieldName}', precision: ${2:3} }}",
     "scope": "javascript,typescript"
   },
   "Elasticsearch Aggs Global": {
     "prefix": "es-agg-global",
     "description": "Elasticsearch aggregations global",
-    "body": "{ global: {} }",
+    "body": "{ global: {}}",
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggs Histogram": {
+    "prefix": "es-agg-histogram",
+    "description": "Elasticsearch aggregations histogram",
+    "body": "{ histogram: { field: '${1:fieldName}', interval: ${2:50} }}",
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggs IP Range": {
+    "prefix": "es-agg-iprange",
+    "description": "Elasticsearch aggregations IP range",
+    "body": [
+      "{",
+      "\tip_range: {",
+      "\t\tfield: '${1:fieldName}',",      
+      "\t\tranges: [",
+        "\t\t\t{ from: '${3:10.0.0.5}' },",
+        "\t\t\t{ to: '${4:10.0.0.5}' },",
+        "\t\t],",
+      "\t}",
+      "}"
+    ],
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggs Missing": {
+    "prefix": "es-agg-missing",
+    "description": "Elasticsearch aggregations missing",
+    "body": "{ missing: { field: '${1:fieldName}' }}",
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggs Nested": {
+    "prefix": "es-agg-nested",
+    "description": "Elasticsearch aggregations nested",
+    "body": "{ nested: { path: '${1:path}' }}",
     "scope": "javascript,typescript"
   },
 }
