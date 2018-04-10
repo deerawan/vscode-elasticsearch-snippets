@@ -36,4 +36,39 @@
     ],
     "scope": "javascript,typescript"
   },
+  "Elasticsearch Aggs Diversified Sampler": {
+    "prefix": "es-agg-diversified-sampler",
+    "description": "Elasticsearch aggregations diversified sampler",
+    "body": "{ diversified_sampler: { type: '${1:fieldName}', shard_size: ${2:200} }",
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggs Geo Distance": {
+    "prefix": "es-agg-geodistance",
+    "description": "Elasticsearch aggregations geo distance",
+    "body": [
+      "{",
+      "\tgeo_distance: {",
+      "\t\tfield: '${1:fieldName}',",
+      "\t\torigin: '${2:52.3760, 4.894}',",
+      "\t\tranges: [",
+        "\t\t\t{ from: ${3:100} },",
+        "\t\t\t{ to: ${4:200} }",
+        "\t\t]",
+      "\t}",
+      "}"
+    ],
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggs Geohash Grid": {
+    "prefix": "es-agg-geohash-grid",
+    "description": "Elasticsearch aggregations geohash grid",
+    "body": "{ geohash_grid: { field: '${1:fieldName}', precision: ${2:3} }",
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggs Global": {
+    "prefix": "es-agg-global",
+    "description": "Elasticsearch aggregations global",
+    "body": "{ global: {} }",
+    "scope": "javascript,typescript"
+  },
 }

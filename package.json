@@ -21,6 +21,9 @@
   "contributes": {
     "snippets": [
       {        
+        "path": "./snippets/query.code-snippets"
+      },
+      {        
         "path": "./snippets/metric-aggs.code-snippets"
       },
       {        
