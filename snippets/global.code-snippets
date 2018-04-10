@@ -167,4 +167,55 @@
     "body": "{ max: { script: { file: '${1:scriptFileName}', params: { ${2:paramName}: '${3:value}' } }}}",
     "scope": "javascript,typescript"
   }, 
+  "Elasticsearch Aggregations Min": {
+    "prefix": "es-agg-min",
+    "description": "Elasticsearch aggregations min",
+    "body": "{ min: { field: '${1:fieldName}' }}",
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggregations Min Inline Script": {
+    "prefix": "es-agg-min-script",
+    "description": "Elasticsearch aggregations min inline script",
+    "body": "{ min: { script: { inline: '${1:script}', params: { ${2:paramName}: '${3:value}' }, lang: 'painless' }}}",
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggregations Min File Script": {
+    "prefix": "es-agg-min-script-file",
+    "description": "Elasticsearch aggregations min file script",
+    "body": "{ min: { script: { file: '${1:scriptFileName}', params: { ${2:paramName}: '${3:value}' } }}}",
+    "scope": "javascript,typescript"
+  }, 
+  "Elasticsearch Aggregations Percentiles": {
+    "prefix": "es-agg-percentiles",
+    "description": "Elasticsearch aggregations percentiles",
+    "body": "{ percentiles: { field: '${1:fieldName}' }}",
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggregations Percentiles Ranks": {
+    "prefix": "es-agg-percentiles-rank",
+    "description": "Elasticsearch aggregations percentiles ranks",
+    "body": "{ percentile_ranks: { field: '${1:fieldName}', values: [${2}] }}",
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggregations Scripted Metric": {
+    "prefix": "es-agg-scripted-metric",
+    "description": "Elasticsearch aggregations scripted metric",
+    "body": [
+      "{",
+      "\tscripted_metric: {",
+      "\t\tinit_script: '${1:initScript}'",
+      "\t\tmap_script: '${2:mapScript}'",
+      "\t\tcombine_script: '${3:combineScript}'",
+      "\t\treduce_script: '${4:reduceScript}'",
+      "\t}",
+      "}",
+    ],
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggregations Stats": {
+    "prefix": "es-agg-stats",
+    "description": "Elasticsearch aggregations stats",
+    "body": "{ stats: { field: '${1:fieldName}' }}",
+    "scope": "javascript,typescript"
+  },
 }
