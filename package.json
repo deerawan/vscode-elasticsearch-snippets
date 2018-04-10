@@ -21,7 +21,7 @@
   "contributes": {
     "snippets": [
       {        
-        "path": "./snippets/global.code-snippets"
+        "path": "./snippets/metric-aggs.code-snippets"
       }
     ]
   }

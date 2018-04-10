@@ -88,55 +88,19 @@
     "description": "Elasticsearch aggregations average",
     "body": "{ avg: { field: '${1:fieldName}' }}",
     "scope": "javascript,typescript"
-  },
-  "Elasticsearch Aggregations Avg Inline Script": {
-    "prefix": "es-agg-avg-script",
-    "description": "Elasticsearch aggregations average inline script",
-    "body": "{ avg: { script: { inline: '${1:script}', params: { ${2:paramName}: '${3:value}' }, lang: 'painless' }}}",
-    "scope": "javascript,typescript"
-  },
-  "Elasticsearch Aggregations Avg File Script": {
-    "prefix": "es-agg-avg-script-file",
-    "description": "Elasticsearch aggregations average file script",
-    "body": "{ avg: { script: { file: '${1:scriptFileName}', params: { ${2:paramName}: '${3:value}' }}}}",
-    "scope": "javascript,typescript"
-  }, 
+  },  
   "Elasticsearch Aggregations Cardinality": {
     "prefix": "es-agg-cardinality",
     "description": "Elasticsearch aggregations cardinality",
     "body": "{ cardinality: { field: '${1:fieldName}' }}",
     "scope": "javascript,typescript"
-  },
-  "Elasticsearch Aggregations Cardinality Inline Script": {
-    "prefix": "es-agg-cardinality-script",
-    "description": "Elasticsearch aggregations cardinality inline script",
-    "body": "{ cardinality: { script: { inline: '${1:script}', params: { ${2:paramName}: '${3:value}' }, lang: 'painless' }}}",
-    "scope": "javascript,typescript"
-  },
-  "Elasticsearch Aggregations Cardinality File Script": {
-    "prefix": "es-agg-cardinality-script-file",
-    "description": "Elasticsearch aggregations cardinality file script",
-    "body": "{ cardinality: { script: { file: '${1:scriptFileName}', params: { ${2:paramName}: '${3:value}' } }}}",
-    "scope": "javascript,typescript"
-  },
+  },  
   "Elasticsearch Aggregations Extended Stats": {
     "prefix": "es-agg-extstats",
     "description": "Elasticsearch aggregations extended stats",
     "body": "{ extended_stats: { field: '${1:fieldName}' }}",
     "scope": "javascript,typescript"
-  },
-  "Elasticsearch Aggregations Extended Stats Inline Script": {
-    "prefix": "es-agg-extstats-script",
-    "description": "Elasticsearch aggregations extended stats inline script",
-    "body": "{ extended_stats: { script: { inline: '${1:script}', params: { ${2:paramName}: '${3:value}' }, lang: 'painless' }}}",
-    "scope": "javascript,typescript"
-  },
-  "Elasticsearch Aggregations Extended Stats File Script": {
-    "prefix": "es-agg-extstats-script-file",
-    "description": "Elasticsearch aggregations extended stats file script",
-    "body": "{ extended_stats: { script: { file: '${1:scriptFileName}', params: { ${2:paramName}: '${3:value}' } }}}",
-    "scope": "javascript,typescript"
-  }, 
+  },  
   "Elasticsearch Aggregations Geo Bounds": {
     "prefix": "es-agg-geobounds",
     "description": "Elasticsearch aggregations geo bounds",
@@ -154,37 +118,13 @@
     "description": "Elasticsearch aggregations max",
     "body": "{ max: { field: '${1:fieldName}' }}",
     "scope": "javascript,typescript"
-  },
-  "Elasticsearch Aggregations Max Inline Script": {
-    "prefix": "es-agg-max-script",
-    "description": "Elasticsearch aggregations max inline script",
-    "body": "{ max: { script: { inline: '${1:script}', params: { ${2:paramName}: '${3:value}' }, lang: 'painless' }}}",
-    "scope": "javascript,typescript"
-  },
-  "Elasticsearch Aggregations Max File Script": {
-    "prefix": "es-agg-max-script-file",
-    "description": "Elasticsearch aggregations max file script",
-    "body": "{ max: { script: { file: '${1:scriptFileName}', params: { ${2:paramName}: '${3:value}' } }}}",
-    "scope": "javascript,typescript"
-  }, 
+  },  
   "Elasticsearch Aggregations Min": {
     "prefix": "es-agg-min",
     "description": "Elasticsearch aggregations min",
     "body": "{ min: { field: '${1:fieldName}' }}",
     "scope": "javascript,typescript"
-  },
-  "Elasticsearch Aggregations Min Inline Script": {
-    "prefix": "es-agg-min-script",
-    "description": "Elasticsearch aggregations min inline script",
-    "body": "{ min: { script: { inline: '${1:script}', params: { ${2:paramName}: '${3:value}' }, lang: 'painless' }}}",
-    "scope": "javascript,typescript"
-  },
-  "Elasticsearch Aggregations Min File Script": {
-    "prefix": "es-agg-min-script-file",
-    "description": "Elasticsearch aggregations min file script",
-    "body": "{ min: { script: { file: '${1:scriptFileName}', params: { ${2:paramName}: '${3:value}' } }}}",
-    "scope": "javascript,typescript"
-  }, 
+  },  
   "Elasticsearch Aggregations Percentiles": {
     "prefix": "es-agg-percentiles",
     "description": "Elasticsearch aggregations percentiles",
@@ -216,6 +156,31 @@
     "prefix": "es-agg-stats",
     "description": "Elasticsearch aggregations stats",
     "body": "{ stats: { field: '${1:fieldName}' }}",
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggregations Sum": {
+    "prefix": "es-agg-sum",
+    "description": "Elasticsearch aggregations sum",
+    "body": "{ sum: { field: '${1:fieldName}' }}",
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggregations Top Hits": {
+    "prefix": "es-agg-top-hits",
+    "description": "Elasticsearch aggregations top hits",
+    "body": [
+      "{",
+      "\ttop_hits: {",
+      "\t\tsort: [{ ${1:fieldName}: { order: '${2:desc}' }],",
+      "\t\tsize: ${3:1}",
+      "\t}",
+      "}"
+    ],
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggregations Value Count": {
+    "prefix": "es-agg-value-count",
+    "description": "Elasticsearch aggregations value count",
+    "body": "{ value_count: { field: '${1:fieldName}' }}",
     "scope": "javascript,typescript"
   },
 }
