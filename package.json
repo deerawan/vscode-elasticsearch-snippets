@@ -22,6 +22,9 @@
     "snippets": [
       {        
         "path": "./snippets/metric-aggs.code-snippets"
+      },
+      {        
+        "path": "./snippets/bucket-aggs.code-snippets"
       }
     ]
   }

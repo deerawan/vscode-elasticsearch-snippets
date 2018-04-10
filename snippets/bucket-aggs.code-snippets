@@ -1,0 +1,39 @@
+{
+  "Elasticsearch Aggs Children": {
+    "prefix": "es-agg-children",
+    "description": "Elasticsearch aggregations children",
+    "body": "{ children: { type: '${1:fieldName}' }",
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggs Date Histogram": {
+    "prefix": "es-agg-date-histogram",
+    "description": "Elasticsearch aggregations date histogram",
+    "body": [
+      "{",
+      "\tdate_histogram: {",
+      "\t\tfield: '${1:fieldName}',",
+      "\t\tinterval: '${2:month}',",
+      "\t\tformat: '${3:yyyy-MM-dd}'",
+      "\t}",
+      "}"
+    ],
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggs Date Range": {
+    "prefix": "es-agg-date-range",
+    "description": "Elasticsearch aggregations date range",
+    "body": [
+      "{",
+      "\tdate_range: {",
+      "\t\tfield: '${1:fieldName}',",
+      "\t\tformat: '${2:yyyy-MM-dd}',",
+      "\t\tranges: [",
+      "\t\t\t{ from: '${3:now-10M/M}' },",
+      "\t\t\t{ to: '${4:now-10M/M}' }",
+      "\t\t]",
+      "\t}",
+      "}",  
+    ],
+    "scope": "javascript,typescript"
+  },
+}
