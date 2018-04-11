@@ -37,7 +37,7 @@
     "scope": "javascript,typescript"
   },
   "Elasticsearch Aggs Diversified Sampler": {
-    "prefix": "es-agg-diversified-sampler",
+    "prefix": "es-agg-div-sampler",
     "description": "Elasticsearch aggregations diversified sampler",
     "body": "{ diversified_sampler: { type: '${1:fieldName}', shard_size: ${2:200} }}",
     "scope": "javascript,typescript"

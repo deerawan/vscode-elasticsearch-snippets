@@ -28,6 +28,9 @@
       },
       {        
         "path": "./snippets/bucket-aggs.code-snippets"
+      },
+      {        
+        "path": "./snippets/misc.code-snippets"
       }
     ]
   }
