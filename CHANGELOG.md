@@ -1,2 +1,3 @@
 ## v1.0.0
-Initial version
+- Initial version
+- Elasticsearch 5.1
