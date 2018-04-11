@@ -85,8 +85,8 @@
       "\tip_range: {",
       "\t\tfield: '${1:fieldName}',",      
       "\t\tranges: [",
-        "\t\t\t{ from: '${3:10.0.0.5}' },",
-        "\t\t\t{ to: '${4:10.0.0.5}' },",
+        "\t\t\t{ from: '${2:10.0.0.5}' },",
+        "\t\t\t{ to: '${3:10.0.0.5}' },",
         "\t\t],",
       "\t}",
       "}"
@@ -103,6 +103,41 @@
     "prefix": "es-agg-nested",
     "description": "Elasticsearch aggregations nested",
     "body": "{ nested: { path: '${1:path}' }}",
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggs Range": {
+    "prefix": "es-agg-range",
+    "description": "Elasticsearch aggregations range",
+    "body": [
+      "{",
+      "\trange: {",
+      "\t\tfield: '${1:fieldName}',",      
+      "\t\tranges: [",
+        "\t\t\t{ from: '${2:50}' },",        
+        "\t\t\t{ from: '${3:50}', to: '${4:100}' },",        
+        "\t\t\t{ to: '${5:100}' },",
+        "\t\t],",
+      "\t}",
+      "}"
+    ],
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggs Reverse Nested": {
+    "prefix": "es-agg-reverse-nested",
+    "description": "Elasticsearch aggregations reverse nested",
+    "body": "{ reverse_nested: {}}",
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggs Significant Terms": {
+    "prefix": "es-agg-sig-terms",
+    "description": "Elasticsearch aggregations significant terms",
+    "body": "{ significant_terms: { field: '${1:fieldName}' }}",
+    "scope": "javascript,typescript"
+  },
+  "Elasticsearch Aggs Terms": {
+    "prefix": "es-agg-terms",
+    "description": "Elasticsearch aggregations terms",
+    "body": "{ terms: { field: '${1:fieldName}' }}",
     "scope": "javascript,typescript"
   },
 }
