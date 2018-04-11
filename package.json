@@ -5,18 +5,25 @@
   "displayName": "Elasticsearch snippets",
   "description": "Elasticsearch snippets for Javascript and Typescript",
   "license": "See License in LICENSE.md",
-  "icon": "",
+  "icon": "images/elastic-logo.png",
   "galleryBanner": {
-    "color": "#ba6907",
+    "color": "#1c868c",
     "theme": "dark"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/deerawan/vscode-elasticsearch-snippets"
   },
+  "bugs": {
+		"url": "https://github.com/deerawan/vscode-elasticsearch-snippets/issues"
+	},
   "engines": {
     "vscode": "0.10.x"
   },
+  "keywords": [
+    "Elasticsearch",
+    "Elastic"    
+  ],
   "categories": ["Snippets"],
   "contributes": {
     "snippets": [

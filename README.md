@@ -3,6 +3,8 @@ Elasticsearch Snippets for Javascript and Typescript in Visual Studio Code.
 
 Support Elasticsearch 5.1
 
+![elasticsearch snippet usage](images/usage.gif)
+
 ## Installation
 Type `cmd-shift-p`/`ctrl-shift-p` to launch command palette and choose `Extensions: Install Extension`. Search for `Elasticsearch Snippets` and install.
 
