@@ -1,0 +1,14 @@
+{
+  "Elasticsearch Script Inline": {
+    "prefix": "es-script-inline",
+    "description": "Elasticsearch script inline",
+    "body": "{ script: { inline: '$1', lang: '${2:painless}' }}",
+    "scope": "javascript,typescript"
+  }, 
+  "Elasticsearch Script File": {
+    "prefix": "es-script-file",
+    "description": "Elasticsearch script file",
+    "body": "{ script: { inline: '${1:my_script}', params: { ${2:name}: ${3:value} }}",
+    "scope": "javascript,typescript"
+  }, 
+}
