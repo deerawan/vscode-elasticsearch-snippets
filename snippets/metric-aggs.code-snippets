@@ -3,55 +3,55 @@
     "prefix": "es-agg-avg",
     "description": "Elasticsearch aggregations average",
     "body": "{ avg: { field: '${1:fieldName}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },  
   "Elasticsearch Aggregations Cardinality": {
     "prefix": "es-agg-cardinality",
     "description": "Elasticsearch aggregations cardinality",
     "body": "{ cardinality: { field: '${1:fieldName}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },  
   "Elasticsearch Aggregations Extended Stats": {
     "prefix": "es-agg-extstats",
     "description": "Elasticsearch aggregations extended stats",
     "body": "{ extended_stats: { field: '${1:fieldName}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },  
   "Elasticsearch Aggregations Geo Bounds": {
     "prefix": "es-agg-geobounds",
     "description": "Elasticsearch aggregations geo bounds",
     "body": "{ geo_bounds: { field: '${1:fieldName}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggregations Geo Centroid": {
     "prefix": "es-agg-geocentroid",
     "description": "Elasticsearch aggregations geo centroid",
     "body": "{ geo_centroid: { field: '${1:fieldName}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggregations Max": {
     "prefix": "es-agg-max",
     "description": "Elasticsearch aggregations max",
     "body": "{ max: { field: '${1:fieldName}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },  
   "Elasticsearch Aggregations Min": {
     "prefix": "es-agg-min",
     "description": "Elasticsearch aggregations min",
     "body": "{ min: { field: '${1:fieldName}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },  
   "Elasticsearch Aggregations Percentiles": {
     "prefix": "es-agg-percentiles",
     "description": "Elasticsearch aggregations percentiles",
     "body": "{ percentiles: { field: '${1:fieldName}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggregations Percentiles Ranks": {
     "prefix": "es-agg-percentiles-rank",
     "description": "Elasticsearch aggregations percentiles ranks",
     "body": "{ percentile_ranks: { field: '${1:fieldName}', values: [${2}] }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggregations Scripted Metric": {
     "prefix": "es-agg-scripted-metric",
@@ -66,19 +66,19 @@
       "\t}",
       "}",
     ],
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggregations Stats": {
     "prefix": "es-agg-stats",
     "description": "Elasticsearch aggregations stats",
     "body": "{ stats: { field: '${1:fieldName}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggregations Sum": {
     "prefix": "es-agg-sum",
     "description": "Elasticsearch aggregations sum",
     "body": "{ sum: { field: '${1:fieldName}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggregations Top Hits": {
     "prefix": "es-agg-top-hits",
@@ -91,12 +91,12 @@
       "\t}",
       "}"
     ],
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggregations Value Count": {
     "prefix": "es-agg-value-count",
     "description": "Elasticsearch aggregations value count",
     "body": "{ value_count: { field: '${1:fieldName}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
 }

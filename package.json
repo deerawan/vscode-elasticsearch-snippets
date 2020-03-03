@@ -3,7 +3,7 @@
   "publisher": "deerawan",
   "version": "1.0.0",
   "displayName": "Elasticsearch snippets",
-  "description": "Elasticsearch snippets for Javascript and Typescript",
+  "description": "Elasticsearch snippets",
   "license": "See License in LICENSE.md",
   "icon": "images/elastic-logo.png",
   "galleryBanner": {
@@ -15,28 +15,30 @@
     "url": "https://github.com/deerawan/vscode-elasticsearch-snippets"
   },
   "bugs": {
-		"url": "https://github.com/deerawan/vscode-elasticsearch-snippets/issues"
-	},
+    "url": "https://github.com/deerawan/vscode-elasticsearch-snippets/issues"
+  },
   "engines": {
     "vscode": "0.10.x"
   },
   "keywords": [
     "Elasticsearch",
-    "Elastic"    
+    "Elastic"
   ],
-  "categories": ["Snippets"],
+  "categories": [
+    "Snippets"
+  ],
   "contributes": {
     "snippets": [
-      {        
+      {
         "path": "./snippets/query.code-snippets"
       },
-      {        
+      {
         "path": "./snippets/metric-aggs.code-snippets"
       },
-      {        
+      {
         "path": "./snippets/bucket-aggs.code-snippets"
       },
-      {        
+      {
         "path": "./snippets/misc.code-snippets"
       }
     ]

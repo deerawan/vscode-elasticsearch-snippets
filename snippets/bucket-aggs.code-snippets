@@ -3,7 +3,7 @@
     "prefix": "es-agg-children",
     "description": "Elasticsearch aggregations children",
     "body": "{ children: { type: '${1:fieldName}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggs Date Histogram": {
     "prefix": "es-agg-date-histogram",
@@ -17,7 +17,7 @@
       "\t}",
       "}"
     ],
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggs Date Range": {
     "prefix": "es-agg-date-range",
@@ -34,13 +34,13 @@
       "\t}",
       "}",  
     ],
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggs Diversified Sampler": {
     "prefix": "es-agg-div-sampler",
     "description": "Elasticsearch aggregations diversified sampler",
     "body": "{ diversified_sampler: { type: '${1:fieldName}', shard_size: ${2:200} }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggs Geo Distance": {
     "prefix": "es-agg-geodistance",
@@ -57,25 +57,25 @@
       "\t}",
       "}"
     ],
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggs Geohash Grid": {
     "prefix": "es-agg-geohash-grid",
     "description": "Elasticsearch aggregations geohash grid",
     "body": "{ geohash_grid: { field: '${1:fieldName}', precision: ${2:3} }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggs Global": {
     "prefix": "es-agg-global",
     "description": "Elasticsearch aggregations global",
     "body": "{ global: {}}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggs Histogram": {
     "prefix": "es-agg-histogram",
     "description": "Elasticsearch aggregations histogram",
     "body": "{ histogram: { field: '${1:fieldName}', interval: ${2:50} }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggs IP Range": {
     "prefix": "es-agg-iprange",
@@ -91,19 +91,19 @@
       "\t}",
       "}"
     ],
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggs Missing": {
     "prefix": "es-agg-missing",
     "description": "Elasticsearch aggregations missing",
     "body": "{ missing: { field: '${1:fieldName}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggs Nested": {
     "prefix": "es-agg-nested",
     "description": "Elasticsearch aggregations nested",
     "body": "{ nested: { path: '${1:path}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggs Range": {
     "prefix": "es-agg-range",
@@ -120,24 +120,24 @@
       "\t}",
       "}"
     ],
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggs Reverse Nested": {
     "prefix": "es-agg-reverse-nested",
     "description": "Elasticsearch aggregations reverse nested",
     "body": "{ reverse_nested: {}}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggs Significant Terms": {
     "prefix": "es-agg-sig-terms",
     "description": "Elasticsearch aggregations significant terms",
     "body": "{ significant_terms: { field: '${1:fieldName}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Aggs Terms": {
     "prefix": "es-agg-terms",
     "description": "Elasticsearch aggregations terms",
     "body": "{ terms: { field: '${1:fieldName}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
 }
