@@ -3,84 +3,84 @@
     "prefix": "es-term",
     "description": "Elasticsearch query term",
     "body": "{ term: { ${1:fieldName}: '${2:value}' }",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Query Terms": {
     "prefix": "es-terms",
     "description": "Elasticsearch query terms",
     "body": "{ terms: { ${1:fieldName}: ['$2', '$3'] }",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Query Range": {
     "prefix": "es-range",
     "description": "Elasticsearch query range",
     "body": "{ range: { ${1:fieldName}: { gt: '$2', lt: '$3' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Query Exists": {
     "prefix": "es-exists",
     "description": "Elasticsearch query exists",
     "body": "{ exists: { field: '${1:fieldName}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Query Prefix": {
     "prefix": "es-prefix",
     "description": "Elasticsearch query prefix",
     "body": "{ prefix: { ${1:fieldName}: '${2:value}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Query Prefix Advanced": {
     "prefix": "es-prefix-adv",
     "description": "Elasticsearch query prefix advanced",
     "body": "{ prefix: { ${1:fieldName}: { value: '${2:fieldValue}', boost: ${3:2.0} }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Query Wildcard": {
     "prefix": "es-wildcard",
     "description": "Elasticsearch query wildcard",
     "body": "{ wildcard: { ${1:fieldName}: '${2:value}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Query Wildcard Advanced": {
     "prefix": "es-wildcard-adv",
     "description": "Elasticsearch query wildcard advanced",
     "body": "{ wildcard: { ${1:fieldName}: { value: '${2:fieldValue}', boost: ${3:2.0} }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Query Regexp": {
     "prefix": "es-regexp",
     "description": "Elasticsearch query regexp",
     "body": "{ regexp: { ${1:fieldName}: '${2:value}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Query Regexp Advanced": {
     "prefix": "es-regexp-adv",
     "description": "Elasticsearch query regexp advanced",
     "body": "{ regexp: { ${1:fieldName}: { value: '${2:fieldValue}', boost: ${3:2.0}, flags: ${4:ALL} }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Query Fuzzy": {
     "prefix": "es-fuzzy",
     "description": "Elasticsearch query fuzzy",
     "body": "{ fuzzy: { ${1:fieldName}: '${2:value}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Query Fuzzy Advanced": {
     "prefix": "es-fuzzy-adv",
     "description": "Elasticsearch query fuzzy advanced",
     "body": "{ fuzzy: { ${1:fieldName}: { value: '${2:fieldValue}', boost: ${3:2.0}, fuzziness: ${4:2} }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Query Type": {
     "prefix": "es-type",
     "description": "Elasticsearch query type",
     "body": "{ type: { value: '${1:mappingType}' }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   },
   "Elasticsearch Query Ids": {
     "prefix": "es-ids",
     "description": "Elasticsearch query ids",
     "body": "{ ids: { type: '${1:mappingType}', values: ['$2', '$3'] }}",
-    "scope": "javascript,typescript"
+    "scope": "javascript,typescript,es"
   }, 
 }

@@ -1,7 +1,12 @@
 # Elasticsearch Snippets for Visual Studio Code
-Elasticsearch Snippets for Javascript and Typescript in Visual Studio Code. 
+Elasticsearch Snippets in Visual Studio Code. 
 
 Support Elasticsearch 5.1
+
+Snippets are available for languages: 
+1. Javascript
+2. Typescript
+3. Elasticsearch (need to install this [extension](https://marketplace.visualstudio.com/items?itemName=ria.elastic))
 
 ![elasticsearch snippet usage](images/usage.gif)
 
