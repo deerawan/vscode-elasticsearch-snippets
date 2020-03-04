@@ -1,7 +1,7 @@
 {
   "name": "vscode-elasticsearch-snippets",
   "publisher": "deerawan",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "displayName": "Elasticsearch snippets",
   "description": "Elasticsearch snippets",
   "license": "See License in LICENSE.md",
